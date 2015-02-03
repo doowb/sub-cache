@@ -1,7 +1,7 @@
 {
   "name": "sub-cache",
   "description": "Create namespaced sub caches for transform caches.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/doowb/sub-cache",
   "author": {
     "name": "Brian Woodward",
