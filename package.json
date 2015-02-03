@@ -1,6 +1,6 @@
 {
   "name": "sub-cache",
-  "description": "Namespaced caches running on the same cache object.",
+  "description": "Create namespaced sub caches for transform caches.",
   "version": "0.1.0",
   "homepage": "https://github.com/doowb/sub-cache",
   "author": {

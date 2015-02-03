@@ -1,6 +1,6 @@
 # sub-cache [![NPM version](https://badge.fury.io/js/sub-cache.svg)](http://badge.fury.io/js/sub-cache)
 
-> Namespaced caches running on the same cache object.
+> Create namespaced sub caches for transform caches.
 
 ## Install
 ## Install with [npm](npmjs.org)
@@ -18,10 +18,30 @@ npm test
 ## Usage
 
 ```js
-var subCache = require('sub-cache');
+var SubCache = require('sub-cache');
 ```
 
 ## API
+### [SubCache](index.js#L34)
+
+Create a namespaced sub cache when given a transform-cache instance
+
+* `cache` **{Object}**: Instance of a [transform-cache].    
+* `namespace` **{String}**: Namespace to use    
+
+```js
+var Cache = require('transform-cache');
+var SubCache = require('sub-cache');
+var cache = new Cache();
+var subA = new SubCache(cache, 'a');
+var subB = new SubCache(cache, 'b');
+
+subA.set('foo', 'bar');
+//=> cache.a.foo: 'bar'
+
+subB.set('foo', 'baz');
+//=> cache.b.foo: 'baz'
+```
 
 
 ## Contributing

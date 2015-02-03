@@ -28,6 +28,7 @@ var TransformCache = require('transform-cache');
  *
  * @param {Object} `cache` Instance of a [transform-cache].
  * @param {String} `namespace` Namespace to use
+ * @api public
  */
 
 function SubCache (cache, namespace) {
