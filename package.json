@@ -18,6 +18,7 @@
     "type": "MIT",
     "url": "https://github.com/doowb/sub-cache/blob/master/LICENSE-MIT"
   },
+  "files": ["index.js"],
   "main": "index.js",
   "engines": {
     "node": ">=0.10.0"
