@@ -26,8 +26,10 @@
     "test": "mocha -R spec"
   },
   "devDependencies": {
-    "mocha": "*",
-    "should": "*"
+    "mocha": "^2.1.0"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "transform-cache": "^0.2.0"
+  }
 }
